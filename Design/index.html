@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Country Information</h1>
+        <form id="country-form">
+            <input
+                type="text"
+                id="country-input"
+                placeholder="Enter country"
+            />
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="country-info" class="box" style="display: none;">
+            <div class="text-left">
+                <h2 id="country-name"></h2>
+                <img id="country-flag" alt="flag" />
+            </div>
+            <div class="text-right">
+                <p>Capital: <span id="country-capital"></span></p>
+                <p>Population: <span id="country-population"></span></p>
+                <p>Latitude/Longitude: <span id="country-latlng"></span></p>
+            </div>
+            <div class="btn">
+                <button id="weather-button">Capital Weather</button>
+            </div>
+        </div>
+
+        <div id="weather-info" style="display: none;">
+            <h3 id="weather-location"></h3>
+            <img id="weather-icon" alt="weather icon" />
+            <p>Temperature: <span id="weather-temp"></span>°C</p>
+            <p>Condition: <span id="weather-condition"></span></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script> <!-- External JS file -->
+</body>
+</html>
