@@ -1,0 +1,107 @@
+/* Resetting some default browser styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e8f4f8; 
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;     
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+}
+
+h1 {
+  color: #0056b3; 
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff; 
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+button:disabled {
+  background-color: #ccc; 
+  cursor: not-allowed;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.country-details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  text-align: left; 
+  width: 100%;
+  max-width: 600px; 
+}
+
+.country-details img {
+  width: 120px; 
+  height: auto;
+  margin-right: 20px; 
+  border-radius: 8px;
+}
+
+.country-info div {
+  margin-bottom: 20px;
+}
+
+.weather-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-info img {
+  width: 60px;  
+  margin-top: 10px;
+}
