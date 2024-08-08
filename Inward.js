@@ -9,18 +9,16 @@ import Button from "@mui/material/Button";
 
 function Inward() {
   const [dateTime, setDateTime] = useState(new Date());
- 
+
   const updateDateTime = () => {
     setDateTime(new Date());
   };
 
-
   useEffect(() => {
     const timerId = setInterval(updateDateTime, 1000);
-    return () => clearInterval(timerId); 
+    return () => clearInterval(timerId);
   }, []);
 
-  
   const formattedDateTime = dateTime.toLocaleString();
 
   return (
@@ -56,7 +54,9 @@ function Inward() {
 
       <div className="milk-form-container">
         <form className="for">
-          <h2><b>INWARD</b></h2>
+          <h2>
+            <b>INWARD</b>
+          </h2>
 
           <div className="upper-container">
             <TextField
@@ -65,15 +65,13 @@ function Inward() {
               variant="standard"
               type="text"
             />
-
-            <p  className="inwar-voucher"> Date:Time :- {formattedDateTime}</p> <br />
-           
+            <p className="inwar-voucher"> Date:Time :- {formattedDateTime}</p>{" "}
+            <br />
             <TextField
               id="standard-basic"
               label="Rate"
               variant="standard"
               type="text"
-             
             />
             <br />
           </div>
@@ -81,7 +79,7 @@ function Inward() {
           <div className="inwad_Account">
             <FormControl variant="standard" sx={{ m: 1, minWidth: 200 }}>
               <InputLabel id="demo-simple-select-standard-label">
-               Shift
+                Shift
               </InputLabel>
               <Select
                 labelId="demo-simple-select-standard-label"
@@ -95,7 +93,6 @@ function Inward() {
                 <MenuItem value="3">Evening</MenuItem>
               </Select>
             </FormControl>
-
           </div>
 
           <div className="inwad-voucher">
@@ -124,29 +121,29 @@ function Inward() {
                 <MenuItem value="3">Cow</MenuItem>
               </Select>
             </FormControl>
-          
+
             <div className="inwad-fat">
-            <TextField
-              id="standard-basic"
-              label="Fat (%)"
-              variant="standard"
-              type="text"
-            />
+              <TextField
+                id="standard-basic"
+                label="Fat (%)"
+                variant="standard"
+                type="text"
+              />
             </div>
 
             <div className="inwad-liters">
-            <TextField
-              id="standard-basic"
-              label="Liters"
-              variant="standard"
-              type="text"
-            />
+              <TextField
+                id="standard-basic"
+                label="Liters"
+                variant="standard"
+                type="text"
+              />
             </div>
           </div>
           <div className="inwad-save">
-          <Button variant="contained" href="#contained-buttons">
-            Save
-          </Button>
+            <Button variant="contained" href="#contained-buttons">
+              Save
+            </Button>
           </div>
         </form>
       </div>
